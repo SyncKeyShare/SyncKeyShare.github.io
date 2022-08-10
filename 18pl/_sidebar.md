@@ -1,0 +1,6 @@
+* [杂烩](detail/varied.md)
+* [视频](detail/video.md)
+* [动漫](detail/animation.md)
+* [小说](detail/text.md)
+* [漫画/插画/图片](detail/photo.md)
+* [游戏](detail/game.md)
