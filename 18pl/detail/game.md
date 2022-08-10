@@ -24,6 +24,6 @@
 </table>
 
 ---
-推荐一个黄游网站: 
-[https://isacg001.xyz/?aff=725534](https://isacg001.xyz/?aff=725534)
+推荐一个黄游网站:   
+[https://isacg001.xyz/?aff=725534](https://isacg001.xyz/?aff=725534)  
 截图: 要什么截图(不敢在github上放x图),点进去看一眼,满满的全是爱意.你会喜欢的! 
