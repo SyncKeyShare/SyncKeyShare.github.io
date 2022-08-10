@@ -10,15 +10,19 @@
     <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
     <!-- 引入 layui.js -->
     <script src="//unpkg.com/layui@2.6.8/dist/layui.js"></script>
-       <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GSP9ZXV6WT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSP9ZXV6WT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-GSP9ZXV6WT');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-GSP9ZXV6WT');
+    </script>
     <style>
         * {
             margin: 0;
@@ -30,11 +34,13 @@
             height: 100vh;
             margin: 0 auto;
         }
-        @media screen and (min-width: 1200px){
-            #bigBox{
+
+        @media screen and (min-width: 1200px) {
+            #bigBox {
                 width: 1200px;
             }
         }
+
         #content {
             width: 100%;
             margin: 0 auto;
@@ -44,6 +50,7 @@
         #header {
             height: 4vh;
             float: right;
+            margin: 0.5rem;
         }
 
         #main {
@@ -52,18 +59,14 @@
     </style>
 
 </head>
- 
+
 <body>
 <div id="bigBox">
     <div id="content">
 
-        <div id="header" class="">
-            <span class="layui-breadcrumb" lay-separator="|">
-            <a target="syncKeyView" href="./ordinary/"
-               class="layui-btn layui-btn-primary layui-border-blue layui-btn-xs">普通大众级</a>
-                <a target="syncKeyView" href="./18pl/"
-                   class="layui-btn  layui-btn-primary layui-border-orange layui-btn-xs">成人限制级</a>
-            </span>
+        <div id="header">
+            <div class="selModule layui-btn  layui-btn-primary layui-btn-radius layui-border-blue">选择浏览模式</div>
+            <a class="layui-btn layui-btn-primary layui-border-green layui-btn-radius" href="https://t.me/uu52u1">加入电报群</a>
         </div>
 
         <div id="main" style="width: 100%">
@@ -71,6 +74,35 @@
         </div>
     </div>
 </div>
+<script>
+    layui.use(['layer', 'jquery'], function () {
+        let layer = layui.layer,
+            $ = layui.$;
+        init();
 
+        function init() {
+            selModule();
+        }
+
+        $(".selModule").click(function () {
+            selModule();
+        });
+
+        function selModule() {
+            layer.confirm('选择浏览模式:', {
+                btn: ['普通模式', '成人模式'] //按钮
+            }, function () {
+                $('iframe').attr("src", "./ordinary/");
+                layer.msg('普通模式', {icon: 1});
+            }, function () {
+                $('iframe').attr("src", "./18pl/");
+                layer.msg('成人模式');
+            });
+        }
+
+    });
+
+
+</script>
 </body>
 </html>
