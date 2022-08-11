@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>resilio sync key</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -32,31 +32,16 @@
         }
 
         #bigBox {
-            width: 99vw;
+            display: flex;
             height: 100vh;
-            margin: 0 auto;
         }
 
-        @media screen and (min-width: 1200px) {
-            #bigBox {
-                width: 1200px;
-            }
-        }
 
         #content {
-            width: 100%;
-            margin: 0 auto;
-            height: 200px;
+            margin: auto;
         }
-
-        #header {
-            height: 4vh;
-            float: right;
-            margin: 0.5rem;
-        }
-
-        #main {
-            height: 90vh;
+        #content > *{
+            margin-bottom: 10px;
         }
     </style>
 
@@ -65,15 +50,17 @@
 <body>
 <div id="bigBox">
     <div id="content">
-
-        <div id="header">
-            <div class="selModule layui-btn  layui-btn-primary layui-btn-radius layui-border-blue">选择浏览模式</div>
-            <a class="layui-btn layui-btn-primary layui-border-green layui-btn-radius" href="https://t.me/uu52u1">加入电报群</a>
+        <a class="layui-btn layui-btn-primary layui-btn-radius layui-border-blue"
+        href="./course/">
+            Resilio Sync教程:
+        </a>
+        <br>
+        <div class="selModule layui-btn layui-btn-primary layui-btn-radius layui-border-blue">
+            选择浏览模式
         </div>
+        <a class="layui-btn layui-btn-primary layui-border-green layui-btn-radius"
+           href="https://t.me/uu52u1">加入电报群</a>
 
-        <div id="main" style="width: 100%">
-            <iframe style="border: medium none;" src="" name="syncKeyView" width="100%" height="100%"></iframe>
-        </div>
     </div>
 </div>
 <script>
@@ -83,7 +70,7 @@
         init();
 
         function init() {
-            selModule();
+            // selModule();
         }
 
         $(".selModule").click(function () {
@@ -92,13 +79,11 @@
 
         function selModule() {
             layer.confirm('选择浏览模式:', {
-                btn: ['普通模式', '成人模式'] //按钮
+                btn: ['普通模式', '成人模式']
             }, function () {
-                $('iframe').attr("src", "./ordinary/");
-                layer.msg('普通模式', {icon: 1});
+                window.open("./ordinary/index.html");
             }, function () {
-                $('iframe').attr("src", "./18pl/");
-                layer.msg('成人模式');
+                window.open("./18pl");
             });
         }
 
