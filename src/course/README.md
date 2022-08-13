@@ -8,7 +8,7 @@ Resilio Sync 一款
 
 小提示: 使用时,不需要挂翻墙软件
 
-[电脑版视频教程:](https://youtu.be/y-Fe8jR7HaE)
+[电脑版视频教程:](http://dd.ma/McOWkjT5)
 
 [手机版视频教程:](https://youtu.be/atoN-GFBLwc)
 
