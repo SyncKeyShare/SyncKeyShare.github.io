@@ -1,0 +1,4 @@
+# 萝莉资源神key:
+BGR5A3Z2AUNVSNWCZYAC3HBTFE5KYQZZF
+
+> 其它资源暂时没找到

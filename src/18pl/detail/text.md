@@ -1,0 +1,1 @@
+<a href="#/src/18pl/detail/text/">点击跳转</a>

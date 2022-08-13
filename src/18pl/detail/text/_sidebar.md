@@ -1,0 +1,6 @@
+* [短篇小说](/src/18pl/detail/text/md/short/short.md)
+* [中篇小说](/src/18pl/detail/text/md/Medium/Medium.md)
+* [长篇小说](/src/18pl/detail/text/md/long/long.md)
+* [岁](/src/18pl/detail/text/md/age/age.md)
+* [尸](/src/18pl/detail/text/md/corpse/corpse.md)
+* [未分类](/src/18pl/detail/text/md/notSeparate/notSeparate.md)

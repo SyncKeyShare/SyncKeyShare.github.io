@@ -1,0 +1,6 @@
+* [杂烩](/src/18pl/detail/varied.md)
+* [视频](/src/18pl/detail/video.md)
+* [动漫](/src/18pl/detail/animation.md)
+* [小说](/src/18pl/detail/text.md)
+* [漫画/插画/图片](/src/18pl/detail/photo.md)
+* [游戏](/src/18pl/detail/game.md)
