@@ -10,6 +10,18 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css"/>
     <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
     <script src="//unpkg.com/layui@2.6.8/dist/layui.js"></script>
+    <script type="text/javascript">
+        var adult_id = 26860775;
+        var popunder_frequency_delay = 0;
+        var adult_google_compliant = false;
+        var adult_advert = 'int';
+        var frequency_cap = 5;
+        var frequency_delay = 5;
+        var init_delay = 3;
+        var popunder = false;
+    </script>
+    <script src="https://cdn.adult.xyz/js/entry.js"></script>
+    <script src="https://cdn.adult.xyz/js/display.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1-rc2.min.js"></script>
 </head>
 
@@ -42,6 +54,7 @@
 
         $(".selModule").click(function () {
             selModule();
+            return false;
         });
 
         function selModule() {
